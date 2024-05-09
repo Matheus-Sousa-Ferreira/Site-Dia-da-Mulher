@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+html,body {
+    height: auto;  
+    width: auto;
+}
+
+.formulario {
+    text-align: center;
+}
+
+button {
+    
+    font-size: 60px; /* tamanho da fonte */
+}
+
+h1{ font-family: lobster; }
+
+h2{ font-family: Dancing Script;}
+
+.imagem{
+    float: left; /* Flutuar a imagem para a esquerda */
+    margin-right: 30px; /* Margem à direita para separar a imagem do texto */
+     width: 30%;
+    height: 30; 
+    border-radius: 80%;
+    border-color: black;
+}
+
+.imagem2 {
+    float: right; /* Flutuar a imagem para a direita */
+    width: 30%;
+    margin-left: 20px; /* Margem à esquerda para separar a imagem do texto */
+    height: 30; /* Altura automática para manter a proporção da imagem */
+    border-radius: 60%;
+}
+
+.bg1{
+    background-color: LightPink;
+    height: 90px;
+}
+
+.bg2{
+    background-color: Linen;
+    height: auto;
+}
+
+.texto{
+    font-family: Playfair Display;
+    font-size: 20px;
+}
+
+
+.titulo{
+    padding-right: 30%;
+    
+}
+
+.elemento {
+    opacity: 0; /* Começa com opacidade 0 (invisível) */
+    transition: opacity 1s ease; /* Transição suave para a propriedade de opacidade */
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da mulher</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var elementos = document.querySelectorAll('.elemento');
+
+          window.addEventListener('scroll', function() {
+              elementos.forEach(function(elemento) {
+                  if (isElementInViewport(elemento)) {
+                      elemento.style.opacity = 1;
+                  }
+              });
+          });
+
+          function isElementInViewport(el) {
+              var rect = el.getBoundingClientRect();
+              return (
+                  rect.top >= 0 &&
+                  rect.left >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+              );
+          }
+      });
+  </script>
+
+
+
+</head>
+<body>
+    <!--topo da pagina-->
+    <div class="container-fluid menu">
+      <center>
+        <h1>Bem vindo ao site das mulheres</h1>
+      </center>
+
+      <center>
+        <h2>Bem vinda , <span id="teste"></span>!!! </h2>
+      </center>
+
+      <script>
+          //obter o nome do sessionStorage
+        var nome = sessionStorage.getItem('nome');
+          //exibir o nome na pagina
+        document.getElementById('teste').textContent = nome
+
+      </script>
+
+
+
+
+
+
+
+
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMG/banner1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG/banner2.jpg" class="d-block w-100" alt="..." >
+              </div>
+              <div class="carousel-item">
+                <img src="IMG/banner3.jpg" class="d-block w-100 " alt="..." >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+
+
+
+    <!--conteudo-->
+    <div class="container bg2">
+      
+      <center>
+        <h1 style="font-size: 90px;">Donzelas</h1>
+        <hr style="border-color:#DEB887 ; border-width: 4px;" >
+      </center>
+      <!--MICHELE YEOH-->
+      
+      <div class="elemento">
+        <center>
+        <h2 style="font-size: 40px;">Michelle yeoh</h2>
+      </center>
+      <hr style="border-width: 4px; border-color: #DEB887;" >
+      <div class="container2">
+        <img src="IMG/oscar.jpg" alt="" class="imagem">
+        <p class="texto"></p>
+        <p class="texto">Michelle nasceu na Malásia de uma família de etnia chinesa e desde cedo se mostrou uma jovem bastante esportiva e com talento para a dança, que começou a praticar com 4 anos de idade nas aulas de balé. Aos 15 anos ela se mudou com a família para a Inglaterra, onde foi matriculada na London Royal Academy of Dance. Uma contusão na espinha a impediu de seguir seu sonho de ser uma bailarina clássica e ela passou a ensinar coreografia e outras artes ligadas à dança.</p>
+        <p class="texto">Em março de 2022, foi lançado o filme Everything Everywhere All at Once, protagonizado por Michelle. A atuação da atriz no papel de Evelyn foi amplamente elogiada pela crítica, sendo considerado até à data o papel da sua vida e recebendo o Oscar de Melhor Atriz por sua atuação no filme.</p>
+        <hr style="border-color:#DEB887 ; border-width: 4px;" >
+      </div>
+    </div>
+
+      
+        <div class="elemento">
+
+        
+        
+        <!--ALICIA-->
+        <center>
+        <h2 style="font-size: 40px;">Alicia keys</h2>
+      </center>
+      
+        <hr style="border-color:#DEB887 ; border-width: 4px;" >
+
+        <div class="container2">
+          <img src="IMG/alicia.jpg" alt="" class="imagem2">
+          <p class="texto">O primeiro álbum de Keys, Songs in A Minor, foi lançado nos Estados Unidos em Junho de 2001, e estreou na primeira posição na lista dos mais vendidos da Revista Billboard, vendendo 236 000 cópias na primeira semana (50 000 delas no primeiro dia). Venderia mais de dez milhões de cópias no mundo todo, estabelecendo a popularidade de Keys dentro e fora dos Estados Unidos. O primeiro single do álbum, "Fallin'", passou repetitivamente em rádios de diferentes estilos musicais (do R&B e Hip-Hop ao pop) e ficou seis semanas na primeira posição da lista dos singles mais vendidos da Billboard. Em Setembro de 2001, Keys interpretou "Someday We'll All Be Free" de Donny Hathaway no concerto transmitido por diversas cadeias de televisão dos Estados Unidos America: A Tribute to Heroes dedicado às vítimas dos ataques terroristas de 11 de Setembro Este concerto foi lançado a 4 de Dezembro de 2001 em CD e DVD.</p>
+          <p class="texto"></p>
+        </div>
+
+
+      </div>
+      <!--BEYONCE-->
+      <div class="elemento">
+        <center>
+        <h2 style="font-size: 40px;">Beyonce</h2>
+      </center>
+      
+        <hr style="border-color:#DEB887 ; border-width: 4px;" >
+        <div class="container2">
+        <img src="IMG/bey.jpg" alt="" class="imagem">
+        <p class="texto">
+          Beyoncé Giselle Knowles-Carter (Houston, 4 de setembro de 1981), é uma cantora, compositora, atriz, modelo, dançarina, empresária, estilista, produtora, diretora e roteirista americana. Referida como "Queen Bey", ela tem sido amplamente reconhecida por seu talento artístico, voz e apresentações ao vivo. Suas contribuições para a música e a mídia visual, bem como suas apresentações em concertos a converteram em uma figura cultural proeminente do século XXI. Ela foi eleita a oitava maior cantora de todos os tempos pela revista Rolling Stone,e também foi citada pela revista como "a maior artista viva" em 2023.
+          </p>
+          <p class="texto">Beyoncé nasceu em Houston, no Texas. Seu pai é Mathew Knowles, um executivo musical e empresário, sua mãe é Tina Knowles, uma figurinista e estilista de cabelo. Seu pai é um afro-americano e sua mãe é descendente de crioulos da Luisiana. Beyoncé foi batizada com o nome de solteira de sua mãe, como uma forma de homenageá-la. Beyoncé tem uma irmã chamada Solange, que também é cantora e atriz.</p>
+        
+      </div>
+          
+        </div>
+
+        
+      <div class="elemento">
+        
+          <hr style="border-color:#DEB887 ; border-width: 4px;" >
+          <!--Marta-->
+          <center>
+          <h2 style="font-size: 40px;">Marta</h2>
+        </center>
+  
+          <div class="container2">
+            <img src="IMG/marta.jpg" alt="" class="imagem2">
+            <p class="texto">Marta Vieira da Silva (Embaixadora da boa vontade da ONU Mulheres) (Dois Riachos, 19 de fevereiro de 1986) é uma futebolista brasilo-sueca que atua como ponta-esquerda ou meio-campista. Atualmente joga pelo Orlando Pride, dos Estados Unidos.
+              <br>
+
+              Já foi escolhida como melhor futebolista do mundo por seis vezes, sendo cinco de forma consecutiva. Um recorde não apenas entre mulheres, mas também entre homens. Foi considerada pela Revista Época um dos 100 brasileiros mais influentes do ano de 2009.
+              <br>
+              
+              Desde 2015 é a maior artilheira da história da Seleção Brasileira (contando a masculina e a feminina), com 116 gols.
+            <br>
+              No duelo entre Itália e Brasil, pela fase de grupos da Copa do Mundo de 2019, Marta marcou seu 17º gol, consagrando-se como a maior artilheira da Copa do Mundo de Futebol Feminino e também a pessoa com o maior número de gols em Copas do Mundo.
+            </p>
+  
+          </div>
+        
+      </div>
+      <div class="elemento">
+        <center>
+        <h2>Rayssa Leal</h2>
+      </center>
+        <hr style="border-color:#DEB887 ; border-width: 4px;" >
+        <div class="container2">
+        <img src="IMG/ray.jpg" alt="" class="imagem">
+        <p class="texto">
+          Jhulia Rayssa Mendes Leal (Imperatriz, 4 de janeiro de 2008) é uma skatista brasileira vice-campeã olímpica nos Jogos Olímpicos de Verão de 2020, realizados em Tóquio, a mais jovem medalhista olímpica brasileira.Também é campeã pan-americana, vencendo a medalha de ouro no skate street dos Jogos Pan-Americanos de 2023, disputados em Santiago, no Chile, tendo conquistado a primeira medalha de ouro pro Time Brasil nessa edição do Pan. Foi a primeira vez que o skate integrou o rol de modalidades oficiais de um campeonato pan-americano. Além disso, a atleta foi medalhista de ouro nos X Games e campeã mundial de 2022.
+          <br>
+          Rayssa, filha de Lilian e Haroldo Leal, nasceu e mora em Imperatriz, segunda maior cidade do Maranhão, e alterna os estudos escolares com os treinamentos. Começou a treinar o esporte aos seis anos de idade, após receber um skate de aniversário de um amigo de seu pai.Apesar de não se importar de ser chamada de “Fadinha”, a atleta prefere ser chamada de Rayssa Leal.
+        </p>
+          
+        
+      </div>
+          
+        </div>
+
+
+
+
+
+
+    </div>
+      
+
+
+
+    
+    <!--rodape-->
+    
+    <div class="container-fluid bg1">
+      
+        <div class="row espaçamento">
+            <div class="col-md ">
+              <center>
+              <h1>Este site foi criado para celebrar o dia internacional da mulher!</h1>
+            </center>
+                
+            </div>
+                
+            </div>
+            <div class="col-md">
+                <center>
+                <p><a href="">EVE Desing for Web</a>copyrights © 2024.</p>
+              </center>
+            </div>
+        </div>
+      
+    </div>
+    
+    
+</body>
+</html>
